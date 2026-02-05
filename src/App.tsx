@@ -4,13 +4,13 @@ import { useState } from 'react'
 // 설정
 // ============================================
 const CONFIG = {
-  farmName: "청정 흑염소 농장",
+  farmName: "기북 흑염소 농장",
   phoneNumber: "010-1234-5678",
   kakaoId: "blackgoat_farm",
   instagramUrl: "https://instagram.com/blackgoat_farm",
   blogUrl: "https://blog.naver.com/blackgoat_farm",
-  location: "경상북도 청송군 청송읍 산골길 123",
-  processingFacility: "청송건강원",
+  location: "경상북도 기북면 기북로 ",
+  processingFacility: "기북 건강원",
   yearsOfExperience: 20,
   goatCount: 100,
 }
@@ -25,7 +25,7 @@ function App() {
         <div className="max-w-md mx-auto flex items-center justify-between">
           <div>
             <h1 className="font-bold text-amber-400">{CONFIG.farmName}</h1>
-            <p className="text-[10px] text-zinc-500 tracking-widest">SINCE 2004</p>
+            <p className="text-[10px] text-zinc-500 tracking-widest">SINCE 2022</p>
           </div>
           <a
             href={`tel:${CONFIG.phoneNumber}`}
@@ -46,12 +46,11 @@ function App() {
           <div className="text-center">
             <p className="text-amber-500/80 text-xs tracking-[0.3em] mb-4">PREMIUM QUALITY</p>
             <h2 className="text-3xl font-bold mb-3 leading-tight">
-              <span className="text-amber-400">자연 방목</span>으로 키운<br/>
+              <span className="text-amber-400">자연 방목</span>으로 키운<br />
               건강한 흑염소
             </h2>
             <p className="text-zinc-400 text-sm">
-              경북 청송 해발 400m 청정지역<br/>
-              내 가족이 먹는다는 마음으로 정성껏 키웁니다
+              내 가족이 먹는다는 마음으로 정성껏 키웁니다.
             </p>
           </div>
 
@@ -105,9 +104,8 @@ function App() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`flex-1 py-4 text-sm font-medium relative transition-colors ${
-                activeTab === tab ? 'text-amber-400' : 'text-zinc-600'
-              }`}
+              className={`flex-1 py-4 text-sm font-medium relative transition-colors ${activeTab === tab ? 'text-amber-400' : 'text-zinc-600'
+                }`}
             >
               {tab === 'info' && '농장 소개'}
               {tab === 'process' && '추출 과정'}
@@ -132,7 +130,7 @@ function App() {
               <p className="text-zinc-400 text-sm leading-relaxed">
                 맑은 공기와 깨끗한 물이 흐르는 산자락에서
                 <strong className="text-white"> {CONFIG.goatCount}여 마리의 흑염소</strong>를
-                자연 방목으로 키우고 있습니다.
+                책임감 있게 키우고 있습니다.
               </p>
               <p className="text-zinc-400 text-sm leading-relaxed mt-3">
                 {CONFIG.yearsOfExperience}년간 오직 흑염소만 키워온 노하우로
