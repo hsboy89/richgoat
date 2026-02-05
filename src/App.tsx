@@ -44,13 +44,13 @@ function App() {
 
         <div className="relative max-w-md mx-auto px-5 py-14">
           <div className="text-center">
-            <p className="text-amber-500/80 text-xs tracking-[0.3em] mb-4">PREMIUM QUALITY</p>
+            <p className="text-amber-500/80 text-xs tracking-[0.3em] mb-4">HONEST FARMING</p>
             <h2 className="text-3xl font-bold mb-3 leading-tight">
-              <span className="text-amber-400">자연 방목</span>으로 키운<br />
-              건강한 흑염소
+              <span className="text-amber-400">제 눈으로 보고</span><br />
+              제 손으로 직접 키웁니다
             </h2>
             <p className="text-zinc-400 text-sm">
-              내 가족이 먹는다는 마음으로 정성껏 키웁니다.
+              거짓 없는 농장, 정직한 흑염소 이야기
             </p>
           </div>
 
@@ -66,8 +66,8 @@ function App() {
                 <p className="text-[11px] text-zinc-500 mt-1 tracking-wider">GOATS</p>
               </div>
               <div>
-                <p className="text-4xl font-bold bg-gradient-to-b from-amber-400 to-amber-600 bg-clip-text text-transparent">100%</p>
-                <p className="text-[11px] text-zinc-500 mt-1 tracking-wider">NATURAL</p>
+                <p className="text-4xl font-bold bg-gradient-to-b from-amber-400 to-amber-600 bg-clip-text text-transparent">24h</p>
+                <p className="text-[11px] text-zinc-500 mt-1 tracking-wider">CARE</p>
               </div>
             </div>
           </div>
@@ -128,27 +128,27 @@ function App() {
                 우리 농장 소개
               </h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                맑은 공기와 깨끗한 물이 흐르는 산자락에서
-                <strong className="text-white"> {CONFIG.goatCount}여 마리의 흑염소</strong>를
-                책임감 있게 키우고 있습니다.
+                <strong className="text-white">{CONFIG.goatCount}여 마리의 흑염소</strong>를
+                농장주가 직접 매일 돌봅니다.
+                사료부터 환경까지, 농부의 고집으로 키웁니다.
               </p>
               <p className="text-zinc-400 text-sm leading-relaxed mt-3">
-                {CONFIG.yearsOfExperience}년간 오직 흑염소만 키워온 노하우로
-                건강한 개체만을 엄선하여 관리합니다.
+                {CONFIG.yearsOfExperience}년간 오직 흑염소만 키워온 노하우.
+                잘 먹고 잘 자란 흑염소, 건강이 다릅니다.
               </p>
             </div>
 
             <div className="bg-zinc-900 rounded-2xl p-6 border border-zinc-800">
               <h3 className="font-bold text-amber-400 mb-5 flex items-center gap-2">
                 <span className="w-1 h-5 bg-gradient-to-b from-amber-400 to-amber-600 rounded-full"></span>
-                사육 환경
+                깨끗한 관리
               </h3>
               <div className="space-y-4">
                 {[
-                  '해발 400m 청정 산간지역 위치',
-                  '넓은 산자락에서 자유롭게 방목',
-                  '깨끗한 지하수 급여',
-                  '정기 건강검진 및 위생관리',
+                  '농장주 24시간 밀착 관리',
+                  '체계적인 사료·영양 관리',
+                  '깨끗한 환경, 위생적인 축사',
+                  '정기 건강검진 및 질병 예방',
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-4 text-sm">
                     <span className="w-6 h-6 bg-amber-500/10 border border-amber-500/30 text-amber-500 rounded flex items-center justify-center text-xs">✓</span>
@@ -186,7 +186,7 @@ function App() {
             </div>
 
             <p className="text-center text-zinc-600 text-sm py-3 italic">
-              "기력 보강을 위해 예부터 찾던 흑염소"
+              "기력 보강을 위해 예부터 찾던 흑염소,<br/>농부의 고집으로 정성껏 달였습니다"
             </p>
           </div>
         )}
